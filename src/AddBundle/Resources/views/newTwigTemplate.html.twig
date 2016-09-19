@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" media="screen and (min-width:1024px)" href="{{asset('bundles/css/pc/style.css')}}" />
+        <link rel="stylesheet" media="screen and (min-width:0px)" href="{{asset('bundles/css/phone/style.css')}}"/>
+        <link rel="stylesheet" media="screen and (min-width:720px)" href="{{asset('bundles/css/tablette/style.css')}}" />
+        <title>Mon CV</title>
+    </head>
+
+    <body>
+        <header class="header1">
+            <h1 class="titreprince">Développeur web</h1>
+        </header>
+        <!--balise qui contien la navigation-->
+        <nav id="menu">
+            <!--ceci est une liste non ordonner-->
+            <ul>
+                <!--cette liste est un menu qui redirige vers des sections-->
+                <li><a href="{{ path ("form")}}">Formation</a></li>
+                <li><a href="{{ path ("exp")}}">Expèrience</a></li>
+                <li><a href="{{ path ("qui")}}">A propos</a></li>
+                <li><a href="{{ path ("loisir")}}">Loisir</a></li>
+                <li><a href="{{ path ("contact")}}">Contact</a></li>
+            </ul>
+        </nav>
+        {%block section %}
+            
+            {%endblock%}
+        </body>
+</html>       

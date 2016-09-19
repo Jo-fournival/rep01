@@ -1,0 +1,14 @@
+{% extends "AddBundle::newTwigTemplate.html.twig" %}
+{% block section %}
+    <section class="tell-me">
+        <header class="header">
+            <h2 id="contact">Me contacter</h2>
+        </header>
+        <article>
+            <p>Pour toutes demandes ou questions je vous invite à me contacter via les réseaux sociaux suivants.</p>
+            <a class="lienfoot" href="https://plus.google.com/"><img src="{{asset('./bundles/img/google+.png')}}" alt="logo google plus"></a>
+            <a class="lienfoot" href="https://fr-fr.facebook.com/"><img src="{{asset('./bundles/img/facebook.png')}}" alt="logo facebook"></a>
+            <a class="lienfoot" href="https://twitter.com/?lang=fr"><img src="{{asset('./bundles/img/twitter.png')}}" alt="logo twitter"></a>
+        </article>
+    </section>
+{% endblock %}
